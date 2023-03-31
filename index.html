@@ -1,98 +1,254 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="en">
 
 <head>
-    <!-- Meta tags Obrigatórias -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Fashion Lua</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- WHATSAPP -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-    <!-- font -->
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-
-    <title>Fashion Lua</title>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script>
+    $(function () {
+      $(document).scroll(function () {
+        var $nav = $(".my-navbar");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        console.log('scrolled')
+      });
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </head>
 
 <body>
-    <!-- MENU -->
-    <div class="cover-container principal">
-        <header class="masthead">
-            <div class="inner">
-                <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
-                    <a class="nav-item nav-spaco text-white ml-5 " style="text-decoration: none;" href="#">Fashion
-                        Lua</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
 
-                    <div class="collapse navbar-collapse justify-content-end mr-5" id="navbarSupportedContent">
-                        <ul class="navbar-nav ">
-                            <li class="nav-item active">
-                                <a class="novidades nav-link " href="#novidades">NOVIDADES</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link " href="#localizacao"> LOCALIZAÇÃO</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </header>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <a href="https://wa.me/5521982389189" class="float" target="_blank" style="overflow:hidden;">
+    <i class="fa fa-whatsapp my-float"></i>
+  </a>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <nav class="navbar my-navbar navbar-expand-lg navbar-dark py-0 navbar-custom fixed-top">
+    <a class="nav-item nav-spaco text-white ml-5 " style="text-decoration: none;" href="#">FASHION LUA</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <!-- BANNER PRINCIPAL -->
-        <main class="main">
-            <section class='primeira_pagina home-section home-full-height' id="primeira_pagina">
-                <!-- LOGO -->
-                <div class="container pt-5 align-items-center justify-content-center">
-                    <div class="row justify-content-center">
-                        <div class="col-lg pt-2 text-center">
-                            <img class="logo" src="./assets/img/2-Logo-Principal-Fashion-Lua-Branco.png" alt="">
-                        </div>
-                    </div>
-                </div>
+    <div class="collapse navbar-collapse justify-content-end mr-5" id="navbarSupportedContent">
+      <ul class="navbar-nav ">
+        <li class="nav-item active">
+          <a class="nav-link" href="#procedimentos">NOVIDADES</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#quem_somos"> LOCALIZACÃO</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="main">
+    <section class='primeira_pagina home-section home-full-height' id="primeira_pagina">
 
 
-                <div class="row linha-buttom">
-                    <div class="col-lg description d-flex align-items-end justify-content-center">
-                        <a id="link-dsc" href="https://wa.me/5521982389189" target="_blank"><button id="button-dsc">
-                            Encontrar bolsa perfeita
-                        </button></a>
-                    </div>
-                </div>
-            </section>
+      <!--Logo-->
+
+      <div class="container pt-5 justify-content-center">
+        <div class="row justify-content-center">
+          <div class="col-lg pt-2 text-center">
+            <img class="logo" src="./assets/img/logo-fashion-lua.png" alt="">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="container description justify-content-center">
+
+        <div class="row">
+          <div class="col-lg description">
+            <button id="button-dsc" class="rounded">
+              <a id="link-dsc" href="https://wa.me/5521982389189" target="_blank">Agende sua avaliação</a>
+            </button>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!--SECTION TWO-->
+    <section class="twoCont" id="two">
+
+      <div class="row m-0 justify-content-center align-items-center text-center">
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+        <swiper-container>
+          <swiper-slide class="swiper-slide pl-3 pr-3"><img src="./assets/img/Grupo de rolagem 1.png"
+              alt=""></swiper-slide>
+          <swiper-slide class="swiper-slide pl-3 pr-3"><img src="./assets/img/Grupo de rolagem 1.png"
+              alt=""></swiper-slide>
+          <swiper-slide class="swiper-slide pl-3 pr-3"><img src="./assets/img/Grupo de rolagem 1.png"
+              alt=""></swiper-slide>
+        </swiper-container>
+      </div>
+    </section>
+
+    <a href="#" class="d-flex justify-content-center mb-4 mt-4"><button type="button"
+        class="btn btn-outline-dark">Escolha a sua Favorita</button></a>
+  
+
+
+  <!-- SECTION TREE -->
+  <section class="container-fluid text-center p-0 sectionTree">
+    <img src="./assets/img/tamara-bellis-IwVRO3TLjLc-unsplash.png" class="img-fluid" alt="Imagem responsiva">
+  </section>
+  <a href="#" class="d-flex justify-content-center mb-4"><button type="button" class="btn btn-dark">Escolha a sua
+      Favorita</button></a>
+
+
+  <!-- SECTION FOUR -->
+  <section class="sectionFour" id="four">
+    <img src="./assets/img/FOTOS1.png" alt="">
+    <a href="#" class="d-flex justify-content-center mb-4"><button type="button" class="btn btn-dark">Escolha a sua
+        Favorita</button></a>
+  </section>
+
+
+  <!-- SECTION FIVE -->
+  <section class=" container-fluid sectionFive" id="five">
+    <img src="./assets/img/FOTOS2.png" alt="">
+    <a href="#" class="d-flex justify-content-center mb-4"><button type="button" class="btn btn-dark">Escolha a sua
+        Favorita</button></a>
+  </section>
+
+  <!-- SECTION SIX -->
+  <section class="twoCont" id="two">
+
+    <div class="row m-0 justify-content-center align-items-center text-center">
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+      <swiper-container>
+        <swiper-slide class="swiper-slide pl-3 pr-3"><img src="./assets/img/Grupo de rolagem 2.png"
+            alt=""></swiper-slide>
+        <swiper-slide class="swiper-slide pl-3 pr-3"><img src="./assets/img/Grupo de rolagem 2.png"
+            alt=""></swiper-slide>
+        <swiper-slide class="swiper-slide pl-3 pr-3"><img src="./assets/img/Grupo de rolagem 2.png"
+            alt=""></swiper-slide>
+      </swiper-container>
+    </div>
+    <a href="#" class="d-flex justify-content-center mb-4"><button type="button" class="btn btn-dark">Escolha a sua
+        Favorita</button></a>
+  </section>
+
+
+  <!-- SECTION SEVEN -->
+  <section class="container-fluid sectionSeven">
+    <div class="row">
+      <div class="col"></div>
+      <div class="col-5 sevenItem1">
+        <h2>FIQUE POR DENTRO DAS NOVIDADES</h2>
+      </div>
+      <div class="col-5 sevenItem2"><input type="email" class="form-control" placeholder="Coloque seu e-mail"
+          aria-label="Recipiente para nickname" aria-describedby="basic-addon2"></div>
+    </div>
+  </section>
+  </main>
+
+  <!-- SESSAO FALE CONOSCO -->
+  <section class="container-fluid faleCont" id="fale_conosco">
+    <div class="row" style="position: relative;overflow: hidden;z-index: 100;">
+      <div class="col-md-6 faleCol-1" class="mapa" style="position: relative;z-index: 100;">
+        <iframe style="position: relative; z-index: 100;"
+          src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3675.190288014713!2d-43.56821654939732!3d-22.906351184938522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sAv.Maria%20Teresa%2C%20260%20-%20Edif%C3%ADcio%20Plaza%20Office%20-%20Bloco%202%20-%20Sala%20426%20-%20Campo%20Grande%2C%20RJ!5e0!3m2!1spt-BR!2sbr!4v1677675127627!5m2!1spt-BR!2sbr"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    <a href="#" class="d-flex justify-content-center mb-4"><button type="button" class="btn btn-dark">Escolha a sua
+      Favorita</button></a>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="container-fluid p-4 footerCont align-items-center text-center hide-phone" style="position:relative;">
+    <div class="row d-flex align-items-center justify-content-center text-center ">
+
+      <div class="offset-xs-12 logoFooter col-sm-2 align-items-center"><img src="./assets/img/2-Logo-Principal-Fashion-Lua-Branco.png"
+          alt="Logo Priscilla">
+      </div>
+
+
+      <div class="col-sm-2 text-white wppCont">
+        <a href="https://api.whatsapp.com/message/V4KQFDPT4MZEM1?autoload=1&app_absent=0"
+          target="_blank"><img src="./assets/img/wpp.png" alt="whatsapp">(21) 99999-9999</a>
+      </div>
+
+      <div class="offset-xs-12 col-sm-2 insta-icon">
+        <a href="https://www.instagram.com/luandalopescolecoes/" target="_blank"><img
+            src="./assets/img/instagram.png" alt="instagram">@luandalopescolecoes</a>
+      </div>
+
+  </footer>
+  <footer class="container p-4 footerCont show-phone-only" style="position:relative;">
+    <div class="row justify-content-right text-center">
+
+      <div class="logoFooter pr-3 col-xs-8"><img src="./assets/img/logo-footer.png" alt="Logo Priscilla">
+      </div>
+
+      <div class="offset-md-4 col-xs-8 insta-icon icon text-center">
+        <a href="https://www.instagram.com/spaco_priscilla_priosti/" target="_blank"><img
+            src="./assets/img/instagram3.png" alt="instagram"></a>
+      </div>
+
+      <div class="offset-sm-4 col-xs-8 text-white wppCont align-items-center justify-content-center icon">
+        <a href="https://api.whatsapp.com/send/?phone=5521982389189&text&type=phone_number&app_absent=0"
+          target="_blank"><img src="./assets/img/wpp3.png" alt="whatsapp"></a>
+      </div>
+
+      <div class="offset-sm-4 col-xs-8 iconLocal align-items-center justify-content-center icon">
+
+        <a href="https://www.google.com/maps?q=spa%C3%A7o+priscilla+priosti&um=1&ie=UTF-8&sa=X&ved=2ahUKEwi5vOmhsdz9AhVvKLkGHTWVBmIQ_AUoAnoECAEQBA"
+          style="color: #FFFFFF;text-decoration: none;"> <img src="./assets/img/localizacao3.png"
+            alt="icone localização"></a>
+      </div>
     </div>
 
+  </footer>
 
 
 
-    <!-- JavaScript (Opcional) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+
 </body>
 
 </html>

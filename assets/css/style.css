@@ -14,11 +14,16 @@
     overflow-x: hidden;
 }
 
-
 .navbar {
     font-family: 'Montserrat' !important;
     font-weight: regular;
     font-size: 16px;
+
+}
+
+.my-navbar.scrolled {
+    background-color: rgba(0, 0, 0, .4);
+    transition: background-color 200ms linear;
 }
 
 .main {
@@ -26,7 +31,8 @@
     height: auto;
 }
 
-.principal {
+/*Banner principal*/
+.primeira_pagina {
     width: 100%;
     min-height: calc(100vh - 40px) !important;
     position: relative;
@@ -39,38 +45,374 @@
     opacity: 1;
 }
 
-/*Banner principal*/
-
-
 .logo {
     height: 17vh;
 }
 
-.linha-buttom {
-    height: 63vh;
-    width: 100%;
-}
-
 #button-dsc {
-    background-color: #000000;
-    width: 14vw;
+    background-color: #999B85;
     color: white;
     font-family: 'Montserrat';
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: normal;
+    margin-top: 15px;
     text-decoration: none;
     opacity: 1;
     padding: 1.5vh 2vw;
-    border-radius: 10px;
-    border: none;
 }
 
 #button-dsc:hover {
-    background-color: #000000bb;
-    cursor: pointer;
+    background-color: #57584c;
 }
 
 #link-dsc {
     text-decoration: none;
     color: white;
 }
+
+
+
+/* SECTION TWO */
+.twoCont {
+    background-color: #F4EFEC;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 0px;
+}
+
+
+.twoCont>img {
+    background-color: #F4EFEC;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 40px;
+    margin: 0px 100px;
+}
+
+.twoCont h2 {
+    color: #414141;
+    font-family: 'Montserrat';
+
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 10vh;
+    padding-bottom: 7vh;
+}
+
+.twoCont p {
+    font-size: 1rem;
+    color: #414141;
+    text-align: center;
+    width: 70vw;
+    margin: auto;
+    padding-top: 30px;
+}
+
+
+
+.sectionTree {
+    background-image: url(/assets/img/Retângulo\ 74.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.99;
+}
+
+.sectionTree img {
+    width: 100%;
+    mix-blend-mode: difference;
+    opacity: 1;
+}
+
+
+/* SECTION FIVE */
+.sectionFive {
+    background-image: url(/assets/img/Caminho\ 8.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+
+/* SECTION SEVEN */
+.sectionSeven {
+    background-color: #4D4D4D;
+    color: #FFFFFF;
+    width: 100%;
+    height: 30vh;
+}
+
+.sectionSeven .sevenItem1 h2{
+    font-size: 3rem;
+    font-weight: 200;
+    line-height: 1.8;
+}
+
+.sectionSeven .sevenItem2 {
+    padding: 70px;
+}
+
+.sectionSeven .sevenItem2 input {
+    background-color: #4D4D4D;
+    height: 5vh;
+    width: 18vw;
+    border: 2px solid white;
+    border-radius: 40px;
+}
+
+
+/* SESSAO FALE CONOSCO */
+.faleCont {
+    padding-top: 0px;
+    padding-bottom: 100px;
+    font-family: 'Montserrat';
+    margin: auto;
+
+}
+
+.faleCol-1 {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.74);
+    height: 50vh;
+    margin: auto;
+    padding: 0;
+}
+
+
+
+/* FOOTER */
+.footerCont {
+    background-color: #000;
+    z-index: 20;
+    font-family: 'Montserrat';
+    font-size: 14px;
+}
+
+.footerCont .logoFooter {
+    margin-top: 5px;
+}
+
+.insta-icon img {
+    padding-right: 10px;
+    width: 40px;
+}
+
+.insta-icon a {
+    color: white;
+    text-decoration: none;
+}
+
+.wppCont img {
+    padding-right: 10px;
+    width: 40px;
+}
+
+.wppCont a {
+    color: white;
+    text-decoration: none;
+}
+
+.iconLocal {
+    color: white;
+}
+
+.iconLocal img {
+    padding-right: 10px;
+    width: 40px;
+}
+
+.iconLocal address {
+    padding-top: 15px;
+}
+
+/*BOTÃO DE WHATSAPP FLUTUANDO*/
+.bottomwhats a {
+    color: white;
+}
+
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #505050;
+    z-index: 1000;
+}
+
+.my-float {
+    margin-top: 10px;
+}
+
+.fa-whatsapp {
+    color: white;
+    margin-top: 16px;
+}
+
+.fotos-clinica-cel {
+    display: none;
+}
+
+.show-phone-only {
+    display: none;
+}
+
+
+
+/* BANNER RESPONSIVE */
+@media only screen and (max-width: 767px) {
+
+    /* celular */
+    .logo {
+        height: 15vh;
+    }
+
+    #button-dsc {
+        padding: 1.5vh 4vw;
+    }
+
+    .primeira_pagina {
+        position: relative;
+        background: rgba(0, 0, 0, .6) url('../img/retrato-primeira-pag.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-blend-mode: darken;
+        z-index: 0;
+        background-size: cover;
+        opacity: 1;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .twoCont>h2 {
+        font-size: 32px;
+        text-align: center;
+        padding-top: 6vh;
+        padding-bottom: 4.5vh;
+    }
+
+    .twoCont>p {
+        width: 84vw;
+        font-size: 16px;
+        text-align: left;
+        margin-left: 8vw;
+        margin-right: 8vw;
+    }
+
+    .faleCont {
+        text-align: center;
+        padding-bottom: 3vh;
+    }
+
+
+    .faleCont>h2 {
+        font-size: 32px;
+        padding-top: 6vh;
+        padding-bottom: 4.5vh;
+    }
+
+    .faleCol-1 {
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-bottom: 5vh;
+        max-height: 30vh;
+    }
+
+    .faleCol-2 {
+        margin-left: 2vw !important;
+        margin-right: 2vw;
+        margin-bottom: 5vh;
+        height: auto;
+    }
+
+    .faleCol-2>button a {
+        font-size: 18px !important;
+        margin: 0px !important;
+    }
+
+    .faleCol-2>button {
+        align-self: center;
+        display: block;
+        width: 50vw;
+        height: 5vh;
+        border-radius: 10px;
+        position: relative;
+        margin: 0px auto !important;
+    }
+
+    .hide-phone {
+        display: none;
+    }
+
+    .show-phone-only {
+        display: block;
+    }
+
+    .logoFooter {
+        width: 40vw;
+        position: relative;
+    }
+
+    .logoFooter>img {
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .icon img {
+        padding-right: 0px;
+        height: 6vh;
+        width: auto;
+        align-self: center;
+        justify-self: center;
+        padding: 2vw;
+    }
+}
+
+    /* WHATSAPP */
+    .float {
+        position: fixed;
+        width: 40px;
+        height: 40px;
+        bottom: 30px;
+        right: 30px;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 25px;
+        box-shadow: 2px 2px 3px #505050;
+        z-index: 1000;
+    }
+
+    .my-float {
+        margin-top: 6px;
+        margin-left: 1px;
+    }
