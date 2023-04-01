@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <!-- WHATSAPP -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-  <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+  
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <script>
@@ -26,7 +26,6 @@
       $(document).scroll(function () {
         var $nav = $(".my-navbar");
         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-        console.log('scrolled')
       });
     });
   </script>
@@ -34,7 +33,6 @@
 </head>
 
 <body>
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -64,7 +62,7 @@
     <div class="collapse navbar-collapse justify-content-end mr-5" id="navbarSupportedContent">
       <ul class="navbar-nav ">
         <li class="nav-item active">
-          <a class="nav-link" href="#procedimentos">NOVIDADES</a>
+          <a class="nav-link" href="#seven">NOVIDADES</a>
         </li>
         <li class="nav-item active">
           <a class="nav-link" href="#quem_somos"> LOCALIZACÃO</a>
@@ -75,30 +73,18 @@
 
   <main class="main">
     <section class='primeira_pagina home-section home-full-height' id="primeira_pagina">
-
-
-      <!--Logo-->
-
+      <!--LOGO-->
       <div class="container pt-5 justify-content-center">
         <div class="row justify-content-center">
           <div class="col-lg pt-2 text-center">
             <img class="logo" src="./assets/img/logo-fashion-lua.png" alt="">
           </div>
         </div>
-
       </div>
 
-      <div class="container description justify-content-center">
-
-        <div class="row">
-          <div class="col-lg description">
-            <button id="button-dsc" class="rounded">
-              <a id="link-dsc" href="https://wa.me/5521982389189" target="_blank">Agende sua avaliação</a>
-            </button>
-          </div>
-        </div>
-      </div>
-      </div>
+      <a href="https://api.whatsapp.com/message/V4KQFDPT4MZEM1?autoload=1&app_absent=0" class="d-flex justify-content-center align-items-bottom mb-4 mt-4"
+        style="position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); justify-self: center;"><button
+          type="button" class="btn btn-dark btnBanner" style="background-color: black;">Escolha a sua Favorita</button></a>
     </section>
 
     <!--SECTION TWO-->
@@ -117,78 +103,101 @@
       </div>
     </section>
 
-    <a href="#" class="d-flex justify-content-center mb-4 mt-4"><button type="button"
-        class="btn btn-outline-dark">Escolha a sua Favorita</button></a>
-  
-
-
-  <!-- SECTION TREE -->
-  <section class="container-fluid text-center p-0 sectionTree">
-    <img src="./assets/img/tamara-bellis-IwVRO3TLjLc-unsplash.png" class="img-fluid" alt="Imagem responsiva">
-  </section>
-  <a href="#" class="d-flex justify-content-center mb-4"><button type="button" class="btn btn-dark">Escolha a sua
-      Favorita</button></a>
-
-
-  <!-- SECTION FOUR -->
-  <section class="sectionFour" id="four">
-    <img src="./assets/img/FOTOS1.png" alt="">
-    <a href="#" class="d-flex justify-content-center mb-4"><button type="button" class="btn btn-dark">Escolha a sua
+    <a href="https://api.whatsapp.com/message/V4KQFDPT4MZEM1?autoload=1&app_absent=0" class="d-flex justify-content-center mb-4 mt-4 twoBtn"><button type="button" class="btn">Escolha a sua
         Favorita</button></a>
-  </section>
 
 
-  <!-- SECTION FIVE -->
-  <section class=" container-fluid sectionFive" id="five">
-    <img src="./assets/img/FOTOS2.png" alt="">
-    <a href="#" class="d-flex justify-content-center mb-4"><button type="button" class="btn btn-dark">Escolha a sua
-        Favorita</button></a>
-  </section>
 
-  <!-- SECTION SIX -->
-  <section class="twoCont" id="two">
-
-    <div class="row m-0 justify-content-center align-items-center text-center">
-      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
-      <swiper-container>
-        <swiper-slide class="swiper-slide pl-3 pr-3"><img src="./assets/img/Grupo de rolagem 2.png"
-            alt=""></swiper-slide>
-        <swiper-slide class="swiper-slide pl-3 pr-3"><img src="./assets/img/Grupo de rolagem 2.png"
-            alt=""></swiper-slide>
-        <swiper-slide class="swiper-slide pl-3 pr-3"><img src="./assets/img/Grupo de rolagem 2.png"
-            alt=""></swiper-slide>
-      </swiper-container>
-    </div>
-    <a href="#" class="d-flex justify-content-center mb-4"><button type="button" class="btn btn-dark">Escolha a sua
-        Favorita</button></a>
-  </section>
+    <!-- SECTION TREE -->
+    <section class="container-sm-fluid text-center p-0 sectionTree ">
+      <img src="./assets/img/tamara-bellis-IwVRO3TLjLc-unsplash.png" class="img-fluid treeHider" id="imgTree"
+        alt="Imagem responsiva">
+      <img class="phoneTree d-sm-none" src="./assets/img/FOTOS2.png" alt=""> <!--TROCAR A IMAGEM!!!!!!-->
 
 
-  <!-- SECTION SEVEN -->
-  <section class="container-fluid sectionSeven">
-    <div class="row">
-      <div class="col"></div>
-      <div class="col-5 sevenItem1">
-        <h2>FIQUE POR DENTRO DAS NOVIDADES</h2>
+      <button type="button" class="btn"><a href="https://api.whatsapp.com/message/V4KQFDPT4MZEM1?autoload=1&app_absent=0" class="d-flex justify-content-center mb-4">Escolha a sua
+          Favorita</a></button>
+
+    </section>
+
+
+    <!-- SECTION FOUR -->
+    <section class="container-fluid sectionFour mt-5 d-flex justify-content-center" id="four">
+      <img src="./assets/img/FOTOS1.png" alt="">
+    </section>
+    <a href="https://api.whatsapp.com/message/V4KQFDPT4MZEM1?autoload=1&app_absent=0" class="d-flex justify-content-center mb-4">
+      <button type="button" class="btn btnFour mb-5">Escolha a sua
+        Favorita</button>
+    </a>
+
+
+    <!-- SECTION FIVE -->
+    <section class="container-fluid sectionFive mb-5 d-flex justify-content-center align-items-center" id="five">
+      <img class="" src="/assets/img/FOTOS2.png" alt="">
+      <div class="col-2">
+        <a href="https://api.whatsapp.com/message/V4KQFDPT4MZEM1?autoload=1&app_absent=0" class="d-flex justify-content-center mb-4">
+          <button type="button" class="btn btn-dark">Escolha a sua
+            Favorita</button>
+        </a>
       </div>
-      <div class="col-5 sevenItem2"><input type="email" class="form-control" placeholder="Coloque seu e-mail"
-          aria-label="Recipiente para nickname" aria-describedby="basic-addon2"></div>
+    </section>
+
+
+    <!-- SECTION SIX -->
+    <section class="sixCont" id="six">
+
+      <div class="row m-0 justify-content-center align-items-center text-center">
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+        <swiper-container>
+          <swiper-slide class="swiper-slide pl-3 pr-3"><img src="./assets/img/Grupo de rolagem 1.png"
+              alt=""></swiper-slide>
+          <swiper-slide class="swiper-slide pl-3 pr-3"><img src="./assets/img/Grupo de rolagem 1.png"
+              alt=""></swiper-slide>
+          <swiper-slide class="swiper-slide pl-3 pr-3"><img src="./assets/img/Grupo de rolagem 1.png"
+              alt=""></swiper-slide>
+        </swiper-container>
+      </div>
+      <a href="https://api.whatsapp.com/message/V4KQFDPT4MZEM1?autoload=1&app_absent=0" class="d-flex justify-content-center mb-4"><button type="button" class="btn btnSix">Escolha a sua
+          Favorita</button></a>
+    </section>
+
+
+    <br id="seven">
+    <br>
+    <!-- SECTION SEVEN -->
+    <div class="sectionSeven d-md-flex align-items-center justify-content-md-center w-100">
+      <div class="col-md-7 mr-md-3 text-center text-white overflow-hidden">
+        <div class="py-5 sevenItem1">
+          <h2>FIQUE POR DENTRO DAS NOVIDADES</h2>
+        </div>
+      </div>
+      <div class="col-md-3 mr-md-3 px-3 pt-md-5 pr-md-5 text-center overflow-hidden">
+        <div class="py-1 inputSeven">
+          <input type="email" class="form-control sevenInput" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="Coloque seu email">
+        </div>
+        <div class="my-3  d-flex justify-content-end sevenBtn">
+          <a href="#" class="d-flex justify-content-center mb-4"><button type="button"
+              class="btn btn-light">Enviar</button></a>
+        </div>
+      </div>
     </div>
-  </section>
+
+    </section>
   </main>
 
-  <!-- SESSAO FALE CONOSCO -->
-  <section class="container-fluid faleCont" id="fale_conosco">
+  <!-- SECTION EIGHT -->
+  <section class="container-fluid sectionEight text-center" id="eight">
     <div class="row" style="position: relative;overflow: hidden;z-index: 100;">
-      <div class="col-md-6 faleCol-1" class="mapa" style="position: relative;z-index: 100;">
+      <div class="col-md-6 eightCol-1" class="mapa" style="position: relative;z-index: 100;">
         <iframe style="position: relative; z-index: 100;"
           src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3675.190288014713!2d-43.56821654939732!3d-22.906351184938522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sAv.Maria%20Teresa%2C%20260%20-%20Edif%C3%ADcio%20Plaza%20Office%20-%20Bloco%202%20-%20Sala%20426%20-%20Campo%20Grande%2C%20RJ!5e0!3m2!1spt-BR!2sbr!4v1677675127627!5m2!1spt-BR!2sbr"
           width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
-    <a href="#" class="d-flex justify-content-center mb-4"><button type="button" class="btn btn-dark">Escolha a sua
-      Favorita</button></a>
+    <button type="button" class="btnEight"><a href="https://api.whatsapp.com/message/V4KQFDPT4MZEM1?autoload=1&app_absent=0" class="">Agende uma visita</a></button>
+    
   </section>
 
 
@@ -196,47 +205,23 @@
   <footer class="container-fluid p-4 footerCont align-items-center text-center hide-phone" style="position:relative;">
     <div class="row d-flex align-items-center justify-content-center text-center ">
 
-      <div class="offset-xs-12 logoFooter col-sm-2 align-items-center"><img src="./assets/img/2-Logo-Principal-Fashion-Lua-Branco.png"
-          alt="Logo Priscilla">
+      <div class="offset-xs-12 logoFooter col-sm-4 d-flex align-items-start "><a href="./index.html"><img
+          src="./assets/img/2-Logo-Principal-Fashion-Lua-Branco.png" alt="Logo Fashion Lua"></a>
       </div>
 
 
       <div class="col-sm-2 text-white wppCont">
-        <a href="https://api.whatsapp.com/message/V4KQFDPT4MZEM1?autoload=1&app_absent=0"
-          target="_blank"><img src="./assets/img/wpp.png" alt="whatsapp">(21) 99999-9999</a>
+        <a href="https://api.whatsapp.com/message/V4KQFDPT4MZEM1?autoload=1&app_absent=0" target="_blank"><img
+            src="./assets/img/wpp.png" alt="whatsapp">(21) 99999-9999</a>
       </div>
 
       <div class="offset-xs-12 col-sm-2 insta-icon">
-        <a href="https://www.instagram.com/luandalopescolecoes/" target="_blank"><img
-            src="./assets/img/instagram.png" alt="instagram">@luandalopescolecoes</a>
+        <a href="https://www.instagram.com/luandalopescolecoes/" target="_blank"><img src="./assets/img/instagram.png"
+            alt="instagram">@luandalopescolecoes</a>
       </div>
 
   </footer>
-  <footer class="container p-4 footerCont show-phone-only" style="position:relative;">
-    <div class="row justify-content-right text-center">
-
-      <div class="logoFooter pr-3 col-xs-8"><img src="./assets/img/logo-footer.png" alt="Logo Priscilla">
-      </div>
-
-      <div class="offset-md-4 col-xs-8 insta-icon icon text-center">
-        <a href="https://www.instagram.com/spaco_priscilla_priosti/" target="_blank"><img
-            src="./assets/img/instagram3.png" alt="instagram"></a>
-      </div>
-
-      <div class="offset-sm-4 col-xs-8 text-white wppCont align-items-center justify-content-center icon">
-        <a href="https://api.whatsapp.com/send/?phone=5521982389189&text&type=phone_number&app_absent=0"
-          target="_blank"><img src="./assets/img/wpp3.png" alt="whatsapp"></a>
-      </div>
-
-      <div class="offset-sm-4 col-xs-8 iconLocal align-items-center justify-content-center icon">
-
-        <a href="https://www.google.com/maps?q=spa%C3%A7o+priscilla+priosti&um=1&ie=UTF-8&sa=X&ved=2ahUKEwi5vOmhsdz9AhVvKLkGHTWVBmIQ_AUoAnoECAEQBA"
-          style="color: #FFFFFF;text-decoration: none;"> <img src="./assets/img/localizacao3.png"
-            alt="icone localização"></a>
-      </div>
-    </div>
-
-  </footer>
+  
 
 
 

@@ -29,11 +29,15 @@
 .main {
     width: 100%;
     height: auto;
+    font-family: 'Montserrat';
 }
-
+a:hover{
+    text-decoration: none;
+}
 /*Banner principal*/
 .primeira_pagina {
     width: 100%;
+    font-family: 'Montserrat';
     min-height: calc(100vh - 40px) !important;
     position: relative;
     background: rgba(0, 0, 0, .5) url('../img/CAPA.png');
@@ -49,32 +53,14 @@
     height: 17vh;
 }
 
-#button-dsc {
-    background-color: #999B85;
-    color: white;
-    font-family: 'Montserrat';
-    font-size: 16px;
-    font-weight: normal;
-    margin-top: 15px;
-    text-decoration: none;
-    opacity: 1;
-    padding: 1.5vh 2vw;
+.btnBanner {
+    padding: 10px 30px;
+    border-radius: 10px;
 }
-
-#button-dsc:hover {
-    background-color: #57584c;
-}
-
-#link-dsc {
-    text-decoration: none;
-    color: white;
-}
-
 
 
 /* SECTION TWO */
 .twoCont {
-    background-color: #F4EFEC;
     font-family: 'Montserrat';
     font-size: 20px;
     height: 100%;
@@ -84,7 +70,6 @@
 
 
 .twoCont>img {
-    background-color: #F4EFEC;
     font-family: 'Montserrat';
     font-size: 20px;
     height: 100%;
@@ -113,28 +98,192 @@
     padding-top: 30px;
 }
 
+.twoBtn .btn {
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+    border: 1px solid black;
+    border-radius: 5px;
+}
 
 
+
+    /* SECTION TREE */
 .sectionTree {
-    background-image: url(/assets/img/Retângulo\ 74.png);
+    background-color: #EEECEA;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.99;
+    height: 80vh;
 }
 
 .sectionTree img {
     width: 100%;
-    mix-blend-mode: difference;
-    opacity: 1;
+    height: 70vh;
+}
+
+#imgTree {
+    padding-top: 85px;
+}
+
+.sectionTree a {
+    color: white;
+}
+
+.sectionTree .btn {
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    height: 45px;
+    padding: 10px 25px;
+    border-radius: 10px;
+    position: relative;
+    bottom: 20px;
+}
+
+.sectionTree .phoneTree {
+    display: none;
+}
+
+.treeHide {
+    display: block;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .sectionTree {
+        background-image: none;
+        height: auto;
+    }
+
+    .sectionTree .btn {
+        display: none;
+    }
+    
+    .treeHider {
+        display: none;
+    }
+    .sectionTree .phoneTree {
+        display: block;
+        width: 100%;
+        height: 100vh;
+        mix-blend-mode: normal;
+        opacity: 1;
+    }
+}
+
+
+
+/* SECTION FOUR */
+.sectionFour {
+    width: 100%;
+    height: 80vh;
+    padding-top: 100px;
+}
+
+.sectionFour img {
+    width: 50vw;
+    height: 70vh;
+}
+
+.btnFour {
+    border: 2px solid black;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .sectionFour {
+        width: 100%;
+        height: 60vh;
+    }
+
+    .sectionFour img{
+        width: 100%;
+        height: auto;
+    }
+
+    .sectionFour .btn {
+        display: none;
+    }
 }
 
 
 /* SECTION FIVE */
 .sectionFive {
-    background-image: url(/assets/img/Caminho\ 8.png);
+    background-image: url(/assets/img/Caminho\ 8.png); 
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+    height: 90vh;
+}
+
+.sectionFive img {
+    height: auto;
+}
+
+.sectionFive .btn {
+    background-color: black;
+    border-radius: 10px;
+    font-weight: bolder;
+    padding: 10px 25px;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .sectionFive {
+        background: white;
+        width: 100%;
+        height: 30vh;
+        margin: auto;
+    }
+
+    .sectionFive img {
+        width: 100%;
+        padding-left: 40px;
+    }
+
+    .sectionFive .btn {
+        display: none;
+    }
+}
+
+
+/* SECTION SIX */
+.sixCont {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 0px;
+}
+
+.sixCont>img {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 40px;
+    margin: 0px 100px;
+}
+
+.btnSix {
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 35px;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .btnSix {
+        background-color: black;
+        color: white;
+        padding: 10px 35px;
+        border-radius: 10px;
+    }
 }
 
 
@@ -143,38 +292,61 @@
     background-color: #4D4D4D;
     color: #FFFFFF;
     width: 100%;
-    height: 30vh;
+    height: auto;
 }
 
-.sectionSeven .sevenItem1 h2{
+.sevenItem1 {
+    width: 39vw;
+    padding-left: 100px;
+}
+.sevenItem1 h2 {
+    font-family: 'Montserrat';
+    line-height: 1.6;
+    text-align:left;
     font-size: 3rem;
-    font-weight: 200;
-    line-height: 1.8;
+    font-weight: lighter;
 }
 
-.sectionSeven .sevenItem2 {
-    padding: 70px;
-}
-
-.sectionSeven .sevenItem2 input {
-    background-color: #4D4D4D;
-    height: 5vh;
-    width: 18vw;
+.inputSeven input{
+    min-width: 340px;
+    height: 63px;
     border: 2px solid white;
     border-radius: 40px;
+    background-color: #4D4D4D;
+    color: white;
+}
+
+.sevenBtn .btn {
+    min-width: 5vw;
+    font-weight: bolder;
+    border-radius: 10px;
 }
 
 
-/* SESSAO FALE CONOSCO */
-.faleCont {
-    padding-top: 0px;
+@media only screen and (max-width: 767px) {
+    .sevenItem1 {
+        width: 600px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .sevenItem1 h2 {
+        font-size: 1.1rem;
+        width: 100%;
+        padding: 0;
+    }
+}
+
+
+/* SECTION EIGHT */
+.sectionEight {
+    padding-top: 100px;
     padding-bottom: 100px;
     font-family: 'Montserrat';
     margin: auto;
-
 }
 
-.faleCol-1 {
+.eightCol-1 {
     background-color: white;
     border: 1px solid rgba(0, 0, 0, 0.74);
     height: 50vh;
@@ -182,6 +354,22 @@
     padding: 0;
 }
 
+.btnEight {
+    background-color: black;
+    padding: 10px 40px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.btnEight a {
+    color: white;
+}
+
+@media only screen and (max-width: 767px) {
+    .eightCol-1 {
+        margin: 15px;
+    }
+}
 
 
 /* FOOTER */
@@ -198,80 +386,33 @@
 
 .insta-icon img {
     padding-right: 10px;
-    width: 40px;
+    width: 38px;
 }
 
 .insta-icon a {
     color: white;
     text-decoration: none;
+    font-size: 1rem;
 }
 
 .wppCont img {
     padding-right: 10px;
-    width: 40px;
+    width: 48px;
 }
 
 .wppCont a {
     color: white;
     text-decoration: none;
-}
-
-.iconLocal {
-    color: white;
-}
-
-.iconLocal img {
-    padding-right: 10px;
-    width: 40px;
+    font-size: 1rem;
 }
 
 .iconLocal address {
     padding-top: 15px;
 }
 
-/*BOTÃO DE WHATSAPP FLUTUANDO*/
-.bottomwhats a {
-    color: white;
-}
-
-.float {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 40px;
-    right: 40px;
-    background-color: #25d366;
-    color: #FFF;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 2px 2px 3px #505050;
-    z-index: 1000;
-}
-
-.my-float {
-    margin-top: 10px;
-}
-
-.fa-whatsapp {
-    color: white;
-    margin-top: 16px;
-}
-
-.fotos-clinica-cel {
-    display: none;
-}
-
-.show-phone-only {
-    display: none;
-}
-
-
 
 /* BANNER RESPONSIVE */
 @media only screen and (max-width: 767px) {
-
-    /* celular */
     .logo {
         height: 15vh;
     }
@@ -282,7 +423,7 @@
 
     .primeira_pagina {
         position: relative;
-        background: rgba(0, 0, 0, .6) url('../img/retrato-primeira-pag.png');
+        background: rgba(0, 0, 0, .6) url('/assets/img/CAPA.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-blend-mode: darken;
@@ -308,64 +449,8 @@
     .swiper-slide img {
         display: block;
         width: 100%;
-        height: 100%;
+        height: 100vh;
         object-fit: cover;
-    }
-
-    .twoCont>h2 {
-        font-size: 32px;
-        text-align: center;
-        padding-top: 6vh;
-        padding-bottom: 4.5vh;
-    }
-
-    .twoCont>p {
-        width: 84vw;
-        font-size: 16px;
-        text-align: left;
-        margin-left: 8vw;
-        margin-right: 8vw;
-    }
-
-    .faleCont {
-        text-align: center;
-        padding-bottom: 3vh;
-    }
-
-
-    .faleCont>h2 {
-        font-size: 32px;
-        padding-top: 6vh;
-        padding-bottom: 4.5vh;
-    }
-
-    .faleCol-1 {
-        margin-left: 5vw;
-        margin-right: 5vw;
-        margin-bottom: 5vh;
-        max-height: 30vh;
-    }
-
-    .faleCol-2 {
-        margin-left: 2vw !important;
-        margin-right: 2vw;
-        margin-bottom: 5vh;
-        height: auto;
-    }
-
-    .faleCol-2>button a {
-        font-size: 18px !important;
-        margin: 0px !important;
-    }
-
-    .faleCol-2>button {
-        align-self: center;
-        display: block;
-        width: 50vw;
-        height: 5vh;
-        border-radius: 10px;
-        position: relative;
-        margin: 0px auto !important;
     }
 
     .hide-phone {
@@ -376,43 +461,31 @@
         display: block;
     }
 
-    .logoFooter {
-        width: 40vw;
-        position: relative;
+    .bottomwhats a{
+        color: white;
     }
-
-    .logoFooter>img {
-        object-fit: cover;
-        width: 100%;
-    }
-
-    .icon img {
-        padding-right: 0px;
-        height: 6vh;
-        width: auto;
-        align-self: center;
-        justify-self: center;
-        padding: 2vw;
-    }
-}
-
-    /* WHATSAPP */
-    .float {
-        position: fixed;
-        width: 40px;
-        height: 40px;
-        bottom: 30px;
-        right: 30px;
-        background-color: #25d366;
-        color: #FFF;
-        border-radius: 50px;
-        text-align: center;
-        font-size: 25px;
+    
+    .float{
+        position:fixed;
+        width:60px;
+        height:60px;
+        bottom:40px;
+        right:40px;
+        background-color:#25d366;
+        color:#FFF;
+        border-radius:50px;
+        text-align:center;
+        font-size:30px;
         box-shadow: 2px 2px 3px #505050;
-        z-index: 1000;
+        z-index:1000;
     }
-
-    .my-float {
-        margin-top: 6px;
-        margin-left: 1px;
+    
+    .my-float{
+        margin-top:10px;
     }
+    
+    .fa-whatsapp {
+        color: white;
+        margin-top: 16px;
+    }
+    
